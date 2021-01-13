@@ -11,10 +11,15 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
+import datetime
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -25,7 +30,8 @@ SECRET_KEY = 'v^=%ty0eb-vs1lq4lddk+g#m37g)1(_onswv(b0wd*wg3d_p7*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许那些域名访问django
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'xxc.saicmotor.com']
 
 
 # Application definition
@@ -37,10 +43,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+
+    'rest_framework',  # drf
+    'corsheaders',  # 解决跨域cors
+    'django_filters',
+
+    'users.apps.UsersConfig',  # 用户模块
+    'tables.apps.TablesConfig',  # 表模块
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # 最外层的中间件
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -77,11 +91,11 @@ WSGI_APPLICATION = 'yzs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '10.129.97.10',
+        'HOST': '10.130.151.227',
         'PORT': 3306,
-        'USER': '',
-        'PASSWORD': '',
-        'NAME': 'metadata_test',
+        'USER': 'app_dictpt',
+        'PASSWORD': 'Welcome321.',
+        'NAME': 'dictpt',
     }
 }
 
@@ -116,7 +130,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+#USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -124,26 +138,26 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CACHE = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://10.xx.xx.xx:6379/0",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    },
-    "session": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://10.xx.xx.xx:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
-
-
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "session"
+# CACHE = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://10.xx.xx.xx:6379/0",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     },
+#     "session": {   # 缓存session
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://10.xx.xx.xx:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+#
+#
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_CACHE_ALIAS = "session"
 
 
 
@@ -171,12 +185,24 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
-        'file': {  # 向文件中输出日志
-            'level': 'INFO',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/yzs.log"),  # 日志文件的位置
-            'maxBytes': 300 * 1024 * 1024,
-            'backupCount': 10,
+        # 'file': {  # 向文件中输出日志
+        #     'level': 'INFO',
+        #     'class': 'logging.handlers.RotatingFileHandler',
+        #     'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/yzs.log"),  # 日志文件的位置
+        #     'maxBytes': 300 * 1024 * 1024,
+        #     'backupCount': 10,
+        #     'formatter': 'verbose'
+        # },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            # TimedRotatingFileHandler的参数
+            # 参照https://docs.python.org/3/library/logging.handlers.html#timedrotatingfilehandler
+            # 目前设定每天一个日志文件
+            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/yzs.log"),
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 100,
             'formatter': 'verbose'
         },
     },
@@ -188,3 +214,57 @@ LOGGING = {
         },
     }
 }
+
+REST_FRAMEWORK = {
+
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+
+    # 设置所有接口都需要被验证
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+        #'rest_framework.permissions.AllowAny',
+    ),
+    # 用户登陆认证方式
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        # ’rest_framework.authentication.SessionAuthentication’,
+        # ’rest_framework.authentication.BasicAuthentication’,
+    ),
+
+
+    # 过滤器默认后端
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',),
+
+    # 异常处理
+    'EXCEPTION_HANDLER': 'yzs.utils.exceptions.exception_handler',
+}
+
+
+#cors 追加白名单
+# CORS_ORIGIN_WHITELIST = (
+#     'http://127.0.0.1:8080',
+#     'http://localhost:8080',
+#
+# )
+CORS_ALLOW_CREDENTIALS = True  # 跨域时允许cookie
+
+# jwt 有效期
+# JWT_AUTH = {
+#     'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=8),
+#     # 'JWT_ALLOW_REFRESH': True,
+#     # 续期有效期（该设置可在24小时内带未失效的token 进行续期）
+#     # 'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(hours=24),
+#     # 自定义返回格式，需要手工创建
+#     # 'JWT_RESPONSE_PAYLOAD_HANDLER': 'Users.utils.jwt_response_payload_handler',
+# }
+
+# JWT配置 里面具体配置可以参考文档
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(hours=8),  # 配置过期时间
+    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=3),
+}
+
+AUTH_USER_MODEL = 'users.User'
+AUTHENTICATION_BACKENDS = ('users.authbackend.MyLoginBackend',)

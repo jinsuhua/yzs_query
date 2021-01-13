@@ -1,0 +1,75 @@
+INFO 2021-01-13 09:06:47,930 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 10:38:19,974 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 10:38:57,424 basehttp 154 "GET /sso/token?code=927cb52fd4cfb3fa8da747721d19a1cf&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
+ERROR 2021-01-13 10:38:58,783 log 228 Internal Server Error: /sso/token/
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py", line 116, in get
+    username = pd["uid"].decode('utf8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\zogtc\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\zogtc\venv\lib\site-packages\rest_framework\views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+  File "D:\pythoncode\yzs_query\yzs\yzs\utils\exceptions.py", line 22, in exception_handler
+    view = context('view')
+TypeError: 'dict' object is not callable
+ERROR 2021-01-13 10:38:58,792 basehttp 154 "GET /sso/token/?code=927cb52fd4cfb3fa8da747721d19a1cf&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 500 102848
+WARNING 2021-01-13 10:38:59,072 log 228 Not Found: /favicon.ico
+WARNING 2021-01-13 10:38:59,076 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6211
+INFO 2021-01-13 10:43:37,117 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 10:43:39,478 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 10:43:46,032 basehttp 154 "GET /sso/token?code=578abc507c02e69603a669b7f9d55c7e&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
+WARNING 2021-01-13 10:43:47,443 log 228 Unauthorized: /sso/token/
+WARNING 2021-01-13 10:43:47,447 basehttp 154 "GET /sso/token/?code=578abc507c02e69603a669b7f9d55c7e&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 401 5761
+INFO 2021-01-13 10:51:24,930 basehttp 154 "GET /sso/token?code=53d9e7e81a4fea4dd7d1b9106aba6a7b&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
+WARNING 2021-01-13 10:51:25,132 log 228 Unauthorized: /sso/token/
+WARNING 2021-01-13 10:51:25,135 basehttp 154 "GET /sso/token/?code=53d9e7e81a4fea4dd7d1b9106aba6a7b&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 401 5761
+INFO 2021-01-13 10:51:44,437 basehttp 154 "GET /sso/token?code=1eadef1627a9b67b73d288c7396c78f7&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
+INFO 2021-01-13 10:51:44,683 basehttp 154 "GET /sso/token/?code=1eadef1627a9b67b73d288c7396c78f7&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 200 6149
+INFO 2021-01-13 10:57:29,844 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 10:57:31,783 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 11:03:07,404 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 11:03:10,052 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 11:07:28,452 basehttp 154 "GET /sso/token?code=b59c1e76374366542f07dda94c4f6d1c&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
+INFO 2021-01-13 11:07:29,811 basehttp 154 "GET /sso/token/?code=b59c1e76374366542f07dda94c4f6d1c&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 200 6149
+INFO 2021-01-13 11:10:48,890 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 11:10:50,672 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 11:11:02,689 basehttp 154 "GET /sso/ready HTTP/1.1" 301 0
+INFO 2021-01-13 11:11:02,731 basehttp 154 "GET /sso/ready/ HTTP/1.1" 200 5247
+INFO 2021-01-13 11:11:02,781 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,783 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,796 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,796 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,799 basehttp 154 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,825 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,808 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,828 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,829 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,801 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-01-13 11:11:02,960 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-01-13 11:11:03,090 log 228 Not Found: /favicon.ico
+WARNING 2021-01-13 11:11:03,098 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6203
+INFO 2021-01-13 13:48:12,988 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 13:48:32,073 basehttp 154 "GET /sso/ready/ HTTP/1.1" 200 5250
+INFO 2021-01-13 13:51:51,889 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 13:51:54,058 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 13:55:58,841 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-01-13 13:56:00,557 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-01-13 16:18:09,735 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\config.py changed, reloading.
+INFO 2021-01-13 16:18:12,255 autoreload 597 Watching for file changes with StatReloader
