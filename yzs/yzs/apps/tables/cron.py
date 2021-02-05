@@ -1,5 +1,6 @@
 
 import os,sys
+import shutil
 import zipfile
 import hashlib
 import json
@@ -12,20 +13,31 @@ import django
 django.setup()
 
 from tables.models import *
-from config import *
+#from config import *
+# 部署后是
+from tables.config import *
+
 from datetime import datetime
 import copy
 
 
-
-
 def main():
+    data_date = datetime.now().strftime('%Y%m%d')
 
+    DIR_UNZIP = os.path.join(DIR_UNZIP_ROOT, data_date)
+    DIR_HIS = os.path.join(DIR_HIS_ROOT, data_date)
+    if not os.path.exists(DIR_UNZIP):
+        os.mkdir(DIR_UNZIP)
+    if not os.path.exists(DIR_HIS):
+        os.mkdir(DIR_HIS)
+
+
+    logger.info("开始运行cron定时任务")
     # 遍历原始目录
     #os.chdir(rootdir)
-    logger.info("开始遍历ftp目录: {0}".format(DIR_ROOT))
-    for file in os.listdir(DIR_ROOT):
-        filepath = os.path.join(DIR_ROOT, file)
+    logger.info("开始解压ftp目录: {0}".format(DIR_FTP_ROOT))
+    for file in os.listdir(DIR_FTP_ROOT):
+        filepath = os.path.join(DIR_FTP_ROOT, file)
         #print(file)
         if file.endswith("md5"):
             if checkMd5(filepath):
@@ -71,7 +83,11 @@ def main():
                 # 需要处理的表
                 if len(tables) > 0:
                     parseTable(dbinfo, dbFind.first(), dbinfodir, tables)
+    #　任务完成
+    logger.info("开始移动文件，from{} to {}".format(DIR_FTP_ROOT, DIR_HIS))
+    remove_file(DIR_FTP_ROOT, DIR_HIS)
 
+    logger.info("结束运行cron定时任务")
 
 
 def parseTable(dbinfo, db, dbinfodir, tables):
@@ -360,6 +376,15 @@ def opLog(dbinfo, table_name, op_type, start_date, end_date):
     op.op_end_date = end_date
     op.save()
 
+
+def remove_file(old_path, new_path):
+    print(old_path)
+    print(new_path)
+    filelist = os.listdir(old_path) #列出该目录下的所有文件,listdir返回的文件列表是不包含路径的。
+    for file in filelist:
+        src = os.path.join(old_path, file)
+        dst = os.path.join(new_path, file)
+        shutil.move(src, dst)
 
 
 

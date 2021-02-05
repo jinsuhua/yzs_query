@@ -23,7 +23,6 @@ urlpatterns = [
 
      path('sso/ready/', SSOReady.as_view(), name='sso_ready'),
      path('sso/token/', SSOTokenView.as_view(), name='sso_token'),
-     path('sso/user/', SSOUserView.as_view(), name='sso_user'),
 
      # rest_framework_simplejwt自带的得到token
      path('api/token/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
@@ -38,4 +37,4 @@ router = SimpleRouter()  # 创建路由器(路由器只能结合视图集一起�
 router.register(r'users', views.UserViewSet)  # 注册路由
 #print(router.urls)
 urlpatterns += router.urls  # 把生成好的路由拼接到urlpatterns
-print(urlpatterns)
+#print(urlpatterns)

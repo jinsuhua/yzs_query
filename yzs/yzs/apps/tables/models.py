@@ -4,8 +4,18 @@ import datetime
 # Create your models here.
 
 
+class BusInfo(models.Model):
+    bus_name = models.CharField(max_length=100, verbose_name='业务名称', help_text='业务名称')
+
+    class Meta:
+        db_table = "tb_businfo"  # 指明数据库表名
+        verbose_name = '业务信息'  # 在admin站点中显示的名称
+        verbose_name_plural = verbose_name  # 显示的复数名称
+
+
 # db信息
 class DBInfo(models.Model):
+    businfo = models.ManyToManyField(BusInfo, blank=True, null=True)
     db_ip = models.CharField(max_length=20, verbose_name='ip地址', help_text='ip地址')
     db_port = models.CharField(max_length=20, verbose_name='端口', help_text='端口')
     db_name = models.CharField(max_length=100, null=True, verbose_name='名称', help_text='名称')
@@ -53,7 +63,7 @@ class TabMeta(models.Model):
     htab = models.ForeignKey(TabInfo, on_delete=models.CASCADE, verbose_name='表id', help_text='表id')
     col_name = models.CharField(max_length=100, verbose_name='列名称', help_text='列名称')
     col_type = models.CharField(max_length=60, verbose_name='列类型', help_text='列类型')
-    col_comment = models.CharField(max_length=200, null=True, verbose_name='列注释', help_text='列注释')
+    col_comment = models.CharField(max_length=1024, null=True, verbose_name='列注释', help_text='列注释')
     is_null = models.CharField(max_length=1, verbose_name='是否为空', help_text='是否为空')
     default_val = models.CharField(max_length=200, null=True, verbose_name='默认值', help_text='默认值')
     create_date = models.DateTimeField(auto_now_add=True, help_text='创建时间')

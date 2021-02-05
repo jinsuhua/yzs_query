@@ -14,9 +14,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     token验证
     '''
     def validate(self, attrs):
-        #print("token 验证：1111111111111")
         data = super().validate(attrs)
-        #print("token 验证：2222222222222222")
 
         refresh = self.get_token(self.user)
 

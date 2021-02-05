@@ -17,11 +17,12 @@ isAdUser = 1
 
 
 #用户授权完成后的回调地址，应用需要通过此回调地址获得用户的授权结果。注意请将参数做URLEncode
-redirect_uri_vue = "http://xxc.saicmotor.com/sso/token"
+redirect_uri_vue = "http://xxc.saicmotor.com"
 # 用户登陆跳转接口,登陆成功后返回code
-sso_uri_code = "https://host/sso/authorize"
+sso_uri_code = "https://c2bt4.maxuscloud.com/sso/authorize"
 # 根据 code 获取 token
-sso_uri_token = "https://host/sso/token"
+sso_uri_token = "https://c2bt4.maxuscloud.com/sso/token"
 # 根据 token 获取用户信息
-sso_uri_user = "https://host/sso/user/get"
+sso_uri_user = "https://c2bt4.maxuscloud.com/sso/user/get"
 
+log_access_uris = ['/api/tabddl/','/api/tabmeta/', '/api/tabsamp/']

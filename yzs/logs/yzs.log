@@ -1,13 +1,196 @@
-INFO 2021-01-13 09:06:47,930 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 10:38:19,974 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 10:38:57,424 basehttp 154 "GET /sso/token?code=927cb52fd4cfb3fa8da747721d19a1cf&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
-ERROR 2021-01-13 10:38:58,783 log 228 Internal Server Error: /sso/token/
+INFO 2021-02-02 11:20:27,317 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 11:20:44,563 log 228 Not Found: /dbinfo/
+WARNING 2021-02-02 11:20:44,568 basehttp 154 "GET /dbinfo/ HTTP/1.1" 404 6462
+WARNING 2021-02-02 11:20:44,823 log 228 Not Found: /favicon.ico
+WARNING 2021-02-02 11:20:44,836 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6474
+WARNING 2021-02-02 13:33:12,162 log 228 Not Found: /dbinfo/
+WARNING 2021-02-02 13:33:12,167 basehttp 154 "GET /dbinfo/ HTTP/1.1" 404 6462
+WARNING 2021-02-02 13:33:24,421 log 228 Not Found: /dbinfo/
+WARNING 2021-02-02 13:33:24,427 basehttp 154 "GET /dbinfo/ HTTP/1.1" 404 6462
+INFO 2021-02-02 13:34:28,443 basehttp 154 "GET /api/token HTTP/1.1" 301 0
+WARNING 2021-02-02 13:34:28,703 log 228 Method Not Allowed: /api/token/
+WARNING 2021-02-02 13:34:28,709 basehttp 154 "GET /api/token/ HTTP/1.1" 405 7314
+INFO 2021-02-02 13:34:28,810 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-02-02 13:34:28,815 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-02-02 13:34:28,837 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2021-02-02 13:34:28,854 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2021-02-02 13:34:28,862 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2021-02-02 13:34:28,871 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-02-02 13:34:28,874 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2021-02-02 13:34:28,883 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-02-02 13:34:28,901 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-02-02 13:34:28,905 basehttp 154 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-02-02 13:34:29,100 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-02-02 13:34:33,660 basehttp 154 "POST /api/token/ HTTP/1.1" 200 7756
+WARNING 2021-02-02 13:35:23,110 log 228 Not Found: /tabddl/
+WARNING 2021-02-02 13:35:23,115 basehttp 154 "GET /tabddl/?htab__id=5 HTTP/1.1" 404 6473
+INFO 2021-02-02 13:35:58,546 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:36:54,575 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:36:56,717 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:37:06,520 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:38:18,459 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:38:21,275 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:41:59,874 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:42:02,337 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:46:49,225 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:47:32,241 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:47:34,864 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:47:40,944 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:48:35,631 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:48:37,670 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:49:59,524 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:49:59,561 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:50:02,432 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:50:14,703 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 13:50:52,993 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:50:55,170 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-02-02 13:50:58,920 log 228 Internal Server Error: /api/tabddl/
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py", line 9, in process_request
+    print(request.META.get['HTTP_AUTHORIZATION'])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR 2021-02-02 13:50:58,931 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 500 62421
+INFO 2021-02-02 13:52:53,305 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:52:55,400 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:54:44,885 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 13:54:47,135 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 13:55:25,171 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 14:13:01,294 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:13:03,483 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-02-02 14:17:22,360 log 228 Internal Server Error: /api/tabddl/
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py", line 15, in process_request
+    decodeInfo = jwt_decode_handler(token)
+  File "C:\Users\zogtc\venv\lib\site-packages\rest_framework_jwt\utils.py", line 114, in jwt_decode_handler
+    algorithms=[api_settings.JWT_ALGORITHM]
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jwt.py", line 92, in decode
+    jwt, key=key, algorithms=algorithms, options=options, **kwargs
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jws.py", line 156, in decode
+    key, algorithms)
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jws.py", line 223, in _verify_signature
+    raise InvalidSignatureError('Signature verification failed')
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+ERROR 2021-02-02 14:17:22,375 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 500 85122
+ERROR 2021-02-02 14:17:42,110 log 228 Internal Server Error: /api/tabddl/
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py", line 15, in process_request
+    decodeInfo = jwt_decode_handler(token)
+  File "C:\Users\zogtc\venv\lib\site-packages\rest_framework_jwt\utils.py", line 114, in jwt_decode_handler
+    algorithms=[api_settings.JWT_ALGORITHM]
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jwt.py", line 92, in decode
+    jwt, key=key, algorithms=algorithms, options=options, **kwargs
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jws.py", line 156, in decode
+    key, algorithms)
+  File "C:\Users\zogtc\venv\lib\site-packages\jwt\api_jws.py", line 223, in _verify_signature
+    raise InvalidSignatureError('Signature verification failed')
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+ERROR 2021-02-02 14:17:42,116 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 500 85122
+INFO 2021-02-02 14:21:05,755 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:21:08,152 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 14:21:11,207 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 14:21:11,211 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 183
+INFO 2021-02-02 14:21:36,391 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:21:38,416 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:22:38,918 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:22:41,169 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:23:07,443 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:23:10,101 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:24:09,621 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:24:11,980 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 14:24:19,761 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 14:24:19,765 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 183
+INFO 2021-02-02 14:24:41,967 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+ERROR 2021-02-02 14:25:03,514 log 228 Internal Server Error: /dbinfo/
+Traceback (most recent call last):
+  File "C:\Users\zogtc\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zogtc\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py", line 10, in process_request
+    auth = request.META['HTTP_AUTHORIZATION']
+KeyError: 'HTTP_AUTHORIZATION'
+ERROR 2021-02-02 14:25:03,524 basehttp 154 "GET /dbinfo/ HTTP/1.1" 500 62454
+INFO 2021-02-02 14:28:01,341 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:28:04,069 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:28:25,898 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:28:28,842 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:28:49,940 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:28:52,865 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:40:22,136 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:40:24,748 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 14:50:36,788 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 14:50:38,892 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:00:03,651 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:00:06,065 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:03:39,229 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\config.py changed, reloading.
+INFO 2021-02-02 15:03:41,871 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:05:18,563 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:06:35,046 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:06:37,534 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:06:39,767 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:07:12,297 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:07:14,620 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:07:23,909 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:08:10,846 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:08:13,080 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:08:15,572 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:09:40,028 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:09:40,821 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:09:42,900 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:09:49,660 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:23:36,930 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\models.py changed, reloading.
+INFO 2021-02-02 15:23:40,086 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:28:35,045 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:28:37,307 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:30:29,289 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\config.py changed, reloading.
+INFO 2021-02-02 15:30:31,568 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:30:52,134 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\config.py changed, reloading.
+INFO 2021-02-02 15:30:54,660 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:34:15,830 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:35:17,650 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:35:20,082 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:35:24,303 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:36:31,076 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:36:33,365 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:36:38,742 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:37:48,332 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:37:53,195 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:40:36,527 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\settings\dev.py changed, reloading.
+INFO 2021-02-02 15:40:39,278 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:40:42,729 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+WARNING 2021-02-02 15:42:17,045 log 228 Not Found: /dbinfo/
+WARNING 2021-02-02 15:42:17,051 basehttp 154 "GET /dbinfo/ HTTP/1.1" 404 6462
+WARNING 2021-02-02 15:42:27,170 log 228 Not Found: /sso/user
+WARNING 2021-02-02 15:42:27,175 basehttp 154 "GET /sso/user HTTP/1.1" 404 6465
+INFO 2021-02-02 15:42:31,315 basehttp 154 "GET /sso/token HTTP/1.1" 301 0
+INFO 2021-02-02 15:42:31,320 views 60 sso_code:None
+INFO 2021-02-02 15:42:32,679 views 72 根据code获取access_token----uri：https://c2bt4.maxuscloud.com/sso/token, post 参数：{'client_id': 'DigitalPioneerDev', 'client_secret': 'b5e617f1fff228aea8216d467cdfa37dea694432', 'redirect_uri': 'http://xxc.saicmotor.com', 'grant_type': 'authorization_code', 'code': None}
+INFO 2021-02-02 15:42:32,688 views 77 根据token获取用户信息: https://c2bt4.maxuscloud.com/sso/user/get?access_token=&isAdUser=1
+INFO 2021-02-02 15:42:32,751 views 81 用户信息：{'code': '1111', 'msg': '获取用户信息失败', 'data': None, 'hcmData': None}
+WARNING 2021-02-02 15:42:32,878 log 228 Unauthorized: /sso/token/
+WARNING 2021-02-02 15:42:32,886 basehttp 154 "GET /sso/token/ HTTP/1.1" 401 5328
+INFO 2021-02-02 15:47:07,513 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-02-02 15:47:09,893 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:47:24,728 views 60 sso_code:None
+ERROR 2021-02-02 15:47:24,844 log 228 Internal Server Error: /sso/token/
 Traceback (most recent call last):
   File "C:\Users\zogtc\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
-  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py", line 116, in get
-    username = pd["uid"].decode('utf8')
-AttributeError: 'str' object has no attribute 'decode'
+  File "D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py", line 96, in get
+    rq.POST['username'] = username
+UnboundLocalError: local variable 'username' referenced before assignment
 
 During handling of the above exception, another exception occurred:
 
@@ -29,47 +212,101 @@ Traceback (most recent call last):
   File "D:\pythoncode\yzs_query\yzs\yzs\utils\exceptions.py", line 22, in exception_handler
     view = context('view')
 TypeError: 'dict' object is not callable
-ERROR 2021-01-13 10:38:58,792 basehttp 154 "GET /sso/token/?code=927cb52fd4cfb3fa8da747721d19a1cf&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 500 102848
-WARNING 2021-01-13 10:38:59,072 log 228 Not Found: /favicon.ico
-WARNING 2021-01-13 10:38:59,076 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6211
-INFO 2021-01-13 10:43:37,117 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 10:43:39,478 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 10:43:46,032 basehttp 154 "GET /sso/token?code=578abc507c02e69603a669b7f9d55c7e&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
-WARNING 2021-01-13 10:43:47,443 log 228 Unauthorized: /sso/token/
-WARNING 2021-01-13 10:43:47,447 basehttp 154 "GET /sso/token/?code=578abc507c02e69603a669b7f9d55c7e&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 401 5761
-INFO 2021-01-13 10:51:24,930 basehttp 154 "GET /sso/token?code=53d9e7e81a4fea4dd7d1b9106aba6a7b&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
-WARNING 2021-01-13 10:51:25,132 log 228 Unauthorized: /sso/token/
-WARNING 2021-01-13 10:51:25,135 basehttp 154 "GET /sso/token/?code=53d9e7e81a4fea4dd7d1b9106aba6a7b&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 401 5761
-INFO 2021-01-13 10:51:44,437 basehttp 154 "GET /sso/token?code=1eadef1627a9b67b73d288c7396c78f7&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
-INFO 2021-01-13 10:51:44,683 basehttp 154 "GET /sso/token/?code=1eadef1627a9b67b73d288c7396c78f7&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 200 6149
-INFO 2021-01-13 10:57:29,844 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 10:57:31,783 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 11:03:07,404 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 11:03:10,052 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 11:07:28,452 basehttp 154 "GET /sso/token?code=b59c1e76374366542f07dda94c4f6d1c&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 301 0
-INFO 2021-01-13 11:07:29,811 basehttp 154 "GET /sso/token/?code=b59c1e76374366542f07dda94c4f6d1c&state=a5fd852f-c120-4ba1-89d0-d66dd3582bc9 HTTP/1.1" 200 6149
-INFO 2021-01-13 11:10:48,890 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 11:10:50,672 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 11:11:02,689 basehttp 154 "GET /sso/ready HTTP/1.1" 301 0
-INFO 2021-01-13 11:11:02,731 basehttp 154 "GET /sso/ready/ HTTP/1.1" 200 5247
-INFO 2021-01-13 11:11:02,781 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,783 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,796 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,796 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,799 basehttp 154 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,825 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,808 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,828 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,829 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,801 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
-INFO 2021-01-13 11:11:02,960 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
-WARNING 2021-01-13 11:11:03,090 log 228 Not Found: /favicon.ico
-WARNING 2021-01-13 11:11:03,098 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6203
-INFO 2021-01-13 13:48:12,988 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 13:48:32,073 basehttp 154 "GET /sso/ready/ HTTP/1.1" 200 5250
-INFO 2021-01-13 13:51:51,889 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 13:51:54,058 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 13:55:58,841 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
-INFO 2021-01-13 13:56:00,557 autoreload 597 Watching for file changes with StatReloader
-INFO 2021-01-13 16:18:09,735 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\config.py changed, reloading.
-INFO 2021-01-13 16:18:12,255 autoreload 597 Watching for file changes with StatReloader
+ERROR 2021-02-02 15:47:24,871 basehttp 154 "GET /sso/token/ HTTP/1.1" 500 95276
+INFO 2021-02-02 15:49:11,929 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\views.py changed, reloading.
+INFO 2021-02-02 15:49:14,458 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:49:19,357 views 60 sso_code:None
+WARNING 2021-02-02 15:49:19,471 log 228 Unauthorized: /sso/token/
+WARNING 2021-02-02 15:49:19,475 basehttp 154 "GET /sso/token/ HTTP/1.1" 401 5328
+INFO 2021-02-02 15:49:19,741 views 60 sso_code:None
+WARNING 2021-02-02 15:49:19,796 log 228 Unauthorized: /sso/token/
+WARNING 2021-02-02 15:49:19,810 basehttp 154 "GET /sso/token/ HTTP/1.1" 401 5328
+INFO 2021-02-02 15:49:24,221 views 60 sso_code:None
+WARNING 2021-02-02 15:49:24,278 log 228 Unauthorized: /sso/token/
+WARNING 2021-02-02 15:49:24,284 basehttp 154 "GET /sso/token/ HTTP/1.1" 401 5328
+INFO 2021-02-02 15:49:55,363 basehttp 154 "GET /api/tabddl HTTP/1.1" 301 0
+WARNING 2021-02-02 15:49:55,415 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:49:55,430 basehttp 154 "GET /api/tabddl/ HTTP/1.1" 401 5107
+WARNING 2021-02-02 15:51:29,843 log 228 Method Not Allowed: /api/token/
+WARNING 2021-02-02 15:51:29,850 basehttp 154 "GET /api/token/ HTTP/1.1" 405 7314
+INFO 2021-02-02 15:51:36,347 basehttp 154 "POST /api/token/ HTTP/1.1" 200 7756
+WARNING 2021-02-02 15:52:01,709 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:52:01,711 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+WARNING 2021-02-02 15:52:19,433 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:52:19,437 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+INFO 2021-02-02 15:53:59,674 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\settings\dev.py changed, reloading.
+INFO 2021-02-02 15:54:02,321 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 15:54:07,337 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:54:07,340 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+INFO 2021-02-02 15:55:41,219 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:55:43,641 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 15:55:48,146 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:55:48,149 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+INFO 2021-02-02 15:56:22,918 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:56:25,288 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-02 15:56:29,735 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:56:29,737 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+INFO 2021-02-02 15:57:15,399 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+INFO 2021-02-02 15:58:19,777 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:58:22,500 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:59:07,407 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\users\middleware.py changed, reloading.
+INFO 2021-02-02 15:59:10,042 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-02 15:59:12,425 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 200 672
+WARNING 2021-02-02 15:59:38,802 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 15:59:38,816 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 183
+WARNING 2021-02-02 16:00:46,382 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 16:00:46,396 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 183
+WARNING 2021-02-02 16:01:29,951 log 228 Unauthorized: /api/tabddl/
+WARNING 2021-02-02 16:01:29,956 basehttp 154 "GET /api/tabddl/?htab__id=5 HTTP/1.1" 401 176
+INFO 2021-02-04 10:53:02,922 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-04 13:49:40,980 log 228 Not Found: /
+WARNING 2021-02-04 13:49:41,011 basehttp 154 "GET / HTTP/1.1" 404 6423
+WARNING 2021-02-04 13:53:17,077 log 228 Not Found: /dbinfo/
+WARNING 2021-02-04 13:53:17,082 basehttp 154 "GET /dbinfo/ HTTP/1.1" 404 6462
+WARNING 2021-02-04 13:53:22,501 log 228 Unauthorized: /api/dbinfo/
+WARNING 2021-02-04 13:53:22,508 basehttp 154 "GET /api/dbinfo/ HTTP/1.1" 401 5107
+INFO 2021-02-04 14:46:53,948 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\views.py changed, reloading.
+INFO 2021-02-04 14:47:00,535 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-04 14:47:06,341 basehttp 154 "GET /api/dbinfo/ HTTP/1.1" 200 273041
+WARNING 2021-02-04 15:21:06,883 log 228 Not Found: /dbinfo
+WARNING 2021-02-04 15:21:06,906 basehttp 154 "GET /dbinfo HTTP/1.1" 404 6459
+WARNING 2021-02-04 15:21:24,102 log 228 Not Found: /dbinfo
+WARNING 2021-02-04 15:21:24,153 basehttp 154 "GET /dbinfo HTTP/1.1" 404 6459
+INFO 2021-02-04 15:21:31,587 basehttp 154 "GET /api/dbinfo HTTP/1.1" 301 0
+INFO 2021-02-04 15:21:32,527 basehttp 154 "GET /api/dbinfo/ HTTP/1.1" 200 99339
+INFO 2021-02-04 15:21:39,856 basehttp 154 "GET /api/dbinfo HTTP/1.1" 301 0
+INFO 2021-02-04 15:21:41,584 basehttp 154 "GET /api/dbinfo/ HTTP/1.1" 200 273041
+INFO 2021-02-04 15:21:47,723 basehttp 154 "GET /api/dbinfo/1 HTTP/1.1" 301 0
+INFO 2021-02-04 15:21:47,994 basehttp 154 "GET /api/dbinfo/1/ HTTP/1.1" 200 13699
+INFO 2021-02-04 15:26:17,150 basehttp 154 "DELETE /api/dbinfo/1 HTTP/1.1" 301 0
+WARNING 2021-02-04 15:26:17,357 log 228 Not Found: /api/dbinfo/1/
+WARNING 2021-02-04 15:26:17,376 basehttp 154 "GET /api/dbinfo/1/ HTTP/1.1" 404 23
+INFO 2021-02-04 15:31:01,016 basehttp 154 "DELETE /api/dbinfo/3 HTTP/1.1" 301 0
+INFO 2021-02-04 15:31:01,561 basehttp 154 "GET /api/dbinfo/3/ HTTP/1.1" 200 71176
+INFO 2021-02-04 15:33:09,813 basehttp 154 "DELETE /api/dbinfo/3 HTTP/1.1" 301 0
+INFO 2021-02-04 15:33:10,320 basehttp 154 "GET /api/dbinfo/3/ HTTP/1.1" 200 71176
+INFO 2021-02-04 15:33:39,004 basehttp 154 "GET /api/dbinfo/ HTTP/1.1" 200 256344
+WARNING 2021-02-04 15:34:14,525 log 228 Not Found: /
+WARNING 2021-02-04 15:34:14,537 basehttp 154 "GET / HTTP/1.1" 404 6423
+WARNING 2021-02-04 15:38:47,736 log 228 Not Found: /api/personal/30/
+WARNING 2021-02-04 15:38:47,743 basehttp 154 "GET /api/personal/30/ HTTP/1.1" 404 6489
+WARNING 2021-02-04 15:38:52,053 log 228 Not Found: /favicon.ico
+WARNING 2021-02-04 15:38:52,066 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 6474
+INFO 2021-02-04 15:41:54,016 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\views.py changed, reloading.
+INFO 2021-02-04 15:41:59,545 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-04 15:42:20,656 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\views.py changed, reloading.
+INFO 2021-02-04 15:42:25,702 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-04 15:44:09,167 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\views.py changed, reloading.
+INFO 2021-02-04 15:44:14,011 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-04 15:44:57,629 log 228 Method Not Allowed: /api/dbinfo/
+WARNING 2021-02-04 15:44:57,632 basehttp 154 "DELETE /api/dbinfo/?deleteid=3 HTTP/1.1" 405 43
+INFO 2021-02-04 15:45:07,522 basehttp 154 "GET /api/dbinfo/?deleteid=3 HTTP/1.1" 200 93886
+WARNING 2021-02-04 15:45:46,551 log 228 Method Not Allowed: /api/dbinfo/
+WARNING 2021-02-04 15:45:46,562 basehttp 154 "DELETE /api/dbinfo/?deleteid=3 HTTP/1.1" 405 43
+INFO 2021-02-04 15:53:20,352 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\urls.py changed, reloading.
+INFO 2021-02-04 15:53:24,503 autoreload 597 Watching for file changes with StatReloader
+INFO 2021-02-04 15:53:46,665 autoreload 217 D:\pythoncode\yzs_query\yzs\yzs\apps\tables\urls.py changed, reloading.
+INFO 2021-02-04 15:53:50,807 autoreload 597 Watching for file changes with StatReloader
+WARNING 2021-02-04 15:54:09,632 log 228 Method Not Allowed: /api/dbinfo/
+WARNING 2021-02-04 15:54:09,657 basehttp 154 "DELETE /api/dbinfo/?deleteid=3 HTTP/1.1" 405 43
+INFO 2021-02-04 15:54:23,109 basehttp 154 "DELETE /api/dbinfo/3/ HTTP/1.1" 204 0

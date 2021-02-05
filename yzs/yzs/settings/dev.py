@@ -50,10 +50,13 @@ INSTALLED_APPS = [
 
     'users.apps.UsersConfig',  # 用户模块
     'tables.apps.TablesConfig',  # 表模块
+
+    'django_crontab',  # cron
 ]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # 最外层的中间件
+    'users.middleware.LogMid',  # 访问日志记录
 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -62,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'yzs.urls'
@@ -268,3 +272,10 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = 'users.User'
 AUTHENTICATION_BACKENDS = ('users.authbackend.MyLoginBackend',)
+
+# cron 任务
+#print(sys.path)
+CRONJOBS = [
+    #('47 11 * * *', 'django.core.management.call_command', ['spider_tables']),
+    ('29 15 * * *', 'tables.cron.main'),
+]

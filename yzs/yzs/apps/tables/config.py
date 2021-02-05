@@ -1,7 +1,9 @@
 # ftp目录
-DIR_ROOT = "d:/tmp/test/20201217"
+DIR_FTP_ROOT = "d:/tmp/test"
+# 处理后历史目录
+DIR_HIS_ROOT = "d:/tmp/test1/his"
 # 解压目录
-DIR_UNZIP = "D:/tmp/test/unzip/20201217"
+DIR_UNZIP_ROOT = "D:/tmp/test1/unzip"
 
 #表操作标识
 TAB_DELETE = "delete"
